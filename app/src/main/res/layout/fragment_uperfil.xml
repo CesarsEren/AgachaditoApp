@@ -4,11 +4,137 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UPerfilFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="#6E6E6E"
+        android:orientation="horizontal"
+        android:elevation="5dp">
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/foto"/>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:hint="Nombres"
+            android:inputType="text"
+            android:textColor="@color/inputtext">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_user"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/inputtext"
+                android:textSize="16dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:hint="Apellidos"
+            android:inputType="text"
+            android:textColor="@color/inputtext">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_user"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/inputtext"
+                android:textSize="16dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:hint="Fecha Nacimiento"
+            android:inputType="text"
+            android:textColor="@color/inputtext">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_user"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/inputtext"
+                android:textSize="16dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:hint="Celular"
+            android:inputType="text"
+            android:textColor="@color/inputtext">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_user"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/inputtext"
+                android:textSize="16dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:hint="Correo"
+            android:inputType="text"
+            android:textColor="@color/inputtext">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_user"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/inputtext"
+                android:textSize="16dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnsalir"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="Cerrar Sesión"
+            android:textColor="#ffff"
+            android:layout_marginBottom="50dp"
+            />
+    </LinearLayout>
+</ScrollView>
 </FrameLayout>

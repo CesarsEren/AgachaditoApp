@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.getkeepsafe.taptargetview.TapTarget;
+import com.getkeepsafe.taptargetview.TapTargetView;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,7 +67,17 @@ public class UComercioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ucomercio, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_ucomercio, container, false);
+        TapTargetView.showFor(getActivity(),                 // `this` is an Activity
+                TapTarget.forView(rootView.findViewById(R.id.fabcomercio), "Codigo Qr", "Lee el codigo Qr del Comercio y \nRealiza el pago mas Rápido")
+                        .titleTextSize(30)
+                        .descriptionTextSize(20)
+                        .titleTextColor(R.color.white)
+                        .drawShadow(true)
+                        .cancelable(false)
+                        .tintTarget(false)
+                        .outerCircleColor(R.color.linktext));
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

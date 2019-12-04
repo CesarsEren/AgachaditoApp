@@ -6,8 +6,18 @@
     tools:context=".UCarritoFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="#6E6E6E"
+        android:orientation="horizontal"
+        android:elevation="5dp">
+    </LinearLayout>
 
     <ListView
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/lista"></ListView>
