@@ -34,6 +34,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/btncolor</item>
     </style>
+    <style name="AppThemeComercio" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="titleTextColor">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colortoolbaritemcomercio</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/btncolor</item>
+    </style>
     <style name="sintoolbar" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>

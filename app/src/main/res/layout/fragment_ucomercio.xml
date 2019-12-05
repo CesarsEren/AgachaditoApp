@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:theme="@style/AppThemeComercio"
     tools:context=".UComercioFragment">
          <LinearLayout
             android:layout_width="match_parent"
@@ -44,6 +44,97 @@
 
 
 
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppThemeComercio"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emolientes Cristina"
+                android:id="@+id/cardtitulo"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:background="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/cardsubtitulo"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hamburguesas"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@color/colorPrimaryDark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/cristina"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:id="@+id/btncardver"
+                        android:text="VER"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Av Horacio Urteaga con Av Cuba"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="100 metros"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/world"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

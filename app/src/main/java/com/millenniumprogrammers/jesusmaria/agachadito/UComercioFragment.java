@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.getkeepsafe.taptargetview.TapTarget;
+import com.getkeepsafe.taptargetview.TapTargetSequence;
+import com.getkeepsafe.taptargetview.TapTargetSequence.Listener;
 import com.getkeepsafe.taptargetview.TapTargetView;
 
 
@@ -68,7 +70,7 @@ public class UComercioFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_ucomercio, container, false);
-        TapTargetView.showFor(getActivity(),                 // `this` is an Activity
+        /*TapTargetView.showFor(getActivity(),                 // `this` is an Activity
                 TapTarget.forView(rootView.findViewById(R.id.fabcomercio), "Codigo Qr", "Lee el codigo Qr del Comercio y \nRealiza el pago mas Rápido")
                         .titleTextSize(30)
                         .descriptionTextSize(20)
@@ -76,7 +78,44 @@ public class UComercioFragment extends Fragment {
                         .drawShadow(true)
                         .cancelable(false)
                         .tintTarget(false)
-                        .outerCircleColor(R.color.linktext));
+                        .outerCircleColor(R.color.linktext));*/
+        TapTargetSequence sequence ;
+        sequence = new TapTargetSequence(getActivity());
+        sequence.targets(
+                TapTarget.forView(rootView.findViewById(R.id.fabcomercio), "Codigo Qr", "Usa el Codigo Qr para recoger tus Productos")
+
+                        .outerCircleColor(R.color.linktext)
+                .targetCircleColor(R.color.colorPrimary)
+                .titleTextColor(R.color.white)
+                .textColor(R.color.greenwater)
+                .transparentTarget(true),
+
+
+                TapTarget.forView(rootView.findViewById(R.id.btncardver), "Ver Foto", "Detalle de la Foto Ubicación")
+                        .outerCircleColor(R.color.linktext)
+                        .targetCircleColor(R.color.colorPrimary)
+                        .titleTextColor(R.color.white)
+                        .textColor(R.color.greenwater)
+                        .transparentTarget(true));
+
+        sequence.listener(new TapTargetSequence.Listener() {
+            @Override
+            public void onSequenceFinish() {
+
+            }
+
+            @Override
+            public void onSequenceStep(TapTarget lastTarget, boolean targetClicked) {
+
+            }
+
+            @Override
+            public void onSequenceCanceled(TapTarget lastTarget) {
+
+            }
+        });
+
+        sequence.start();
         return rootView;
     }
 
