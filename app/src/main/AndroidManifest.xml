@@ -9,33 +9,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity" android:theme="@style/sintoolbar">
 
-        <activity
-            android:name=".LoginActivity"
-            android:theme="@style/sintoolbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".RegistroActivityP1"
+        <activity
+            android:name=".RecuperarSesionActivity"
+            android:theme="@style/sintoolbar">
+
+        </activity>
+        <activity
+            android:name=".RecuperarContraseniaActivity"
+            android:label="Recuperar Contraseña"
+            android:theme="@style/ThemeRecuperarContrasenia">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/sintoolbar"></activity>
+        <activity
+            android:name=".RegistroActivityP1"
             android:label="REGISTRO"
             android:theme="@style/ThemeRegistro">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
-
         </activity>
-        <activity android:name=".RegistroActivityP2"
-            android:theme="@style/ThemeRegistro"
-            android:label="REGISTRO">
+        <activity
+            android:name=".RegistroActivityP2"
+            android:label="REGISTRO"
+            android:theme="@style/ThemeRegistro">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".RegistroActivityP1" />
-
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme" />

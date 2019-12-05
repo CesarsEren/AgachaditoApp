@@ -5,5 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RecuperarSesionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/recuperarSesionFoto"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/foto" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Continuar Como:"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/recuperaSesionUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Cesars Pinedo Olivera"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/recuperarSesionBtnGo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btngo" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

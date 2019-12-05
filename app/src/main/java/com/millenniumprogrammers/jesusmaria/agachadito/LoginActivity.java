@@ -15,26 +15,42 @@ import com.getkeepsafe.taptargetview.TapTargetView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btn;
-    TextView btn2;
+    Button GoToPrincipalMain;
+    TextView GoToCreateAcount,GoToForgotPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btn = findViewById(R.id.btningresar);
-        btn2 = findViewById(R.id.btnregistrar);
+        GoToPrincipalMain = findViewById(R.id.btningresar);
+        GoToCreateAcount = findViewById(R.id.btnregistrar);
+        GoToForgotPassword = findViewById(R.id.recuperarpassword);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+
+
+        GoToPrincipalMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                finish();
             }
         });
-        btn2.setOnClickListener(new View.OnClickListener() {
+
+
+
+        GoToCreateAcount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),RegistroActivityP1.class));
+            }
+        });
+
+
+
+        GoToForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),RecuperarContraseniaActivity.class));
             }
         });
     }

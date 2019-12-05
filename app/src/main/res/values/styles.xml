@@ -9,6 +9,14 @@
         <item name="colorAccent">@color/btncolor</item>
     </style>
 
+    <style name="ThemeRecuperarContrasenia" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="titleTextColor">@color/colortoolbaritemcomercio</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/btncolor</item>
+    </style>
+
     <style name="FabThemeComercio" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorAccent">@color/white</item>
